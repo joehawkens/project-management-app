@@ -1,6 +1,123 @@
+/* FONTS ================================= */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+/* ======================================= */
 
 
+/* BODY ================================================================== */
 
 body{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: space-evenly;
     background: white;
+    position: relative;
+    margin: auto;
+    height: 700px;
+    width: 900px;
 }
+/* ======================================================================= */
+
+
+/* TITLE - LOG IN - HEADER =============================================== */
+
+header{
+    display: grid;
+    grid-template-areas: "title login";
+    width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+    border: solid black;
+    background-color: orange;
+}
+
+
+#title{
+    grid-area: "title";
+    font-family: 'Dosis';
+    text-align: left;
+    margin-left: 15px;
+}
+
+#login{
+    grid-area: "login";
+    float: right;
+    margin: auto;
+}
+
+button{
+    background-color: red;
+    font-size: 20px;
+}
+
+#login button:hover{
+    background-color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    
+    header{
+        width: auto;
+    }
+
+    body{
+        width: auto;
+    }
+
+
+  }
+
+/* MAIN CONTENT========================================================== */
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(255, 228, 218);
+    border: solid black;
+    width: 100%;
+    margin: auto;
+    height: 74%;
+}
+
+main button{
+    margin-bottom: 10px;
+}
+
+#text-animation{
+
+    animation-duration: 4s;
+    animation-name: slidein;
+
+}
+
+@keyframes slidein {
+    from {
+      opacity: 0.1;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+
+/* FOOTER =============================================================== */
+footer{
+
+    margin-top: 10px;
+    background-color: orange;
+    border: solid black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    font-size: 15pt;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+/* ====================================================================== */
