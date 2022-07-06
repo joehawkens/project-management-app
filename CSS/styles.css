@@ -108,6 +108,19 @@ main button{
     }
   }
 
+.grid{
+   display: grid;
+   grid-template-areas: 
+    'header header header side side'
+    'main main main main main';
+   padding: 10px;
+   border: 1px solid black;
+}
+
+.task-title{ grid-area: header;}
+.task-percentage{ grid-area: side;}
+.task-progress{ grid-area: main;}
+
 /* LOG IN PAGE=============================================================== */
 
 .login-container{
