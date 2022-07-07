@@ -1,5 +1,8 @@
 # Project Management App
 
+## Purpose:
+
+
 ## Requirements:
 * Includes authentication and user management
 * Performs GET/POST/PUT/DELETE against the backend API
