@@ -1,6 +1,6 @@
 # Project Management App
 
-## Purpose:
+## Purpose: Manage Projects and Teams
 
 
 ## Requirements:
