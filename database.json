@@ -1,12 +1,11 @@
 {
-    "users": [
-      {
+    "users": [{
         "username": "user",
         "password": "password"
-      }
-    ],
-    "teams": [
-        {
+      }],
+      
+
+    "teams": [{
         "teamId": "string",
         "name": "string",
         "members": [
@@ -15,8 +14,9 @@
         "projects": [
             "string"
         ]
-    }
-    ],
+    }],
+
+
     "projects": [{
         "id": "string",
         "title": "string",
@@ -24,8 +24,9 @@
         "task": [
             "string"
         ]
-    }   
-    ],
+    }],
+
+
     "tasks": [{
         "id": "string",
         "title": "string",
