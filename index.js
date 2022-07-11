@@ -1,1 +1,1 @@
-console.log("SERVER IS RUNNING.");
+console.log("JAVSCRIPT IS CONNECTED.");
