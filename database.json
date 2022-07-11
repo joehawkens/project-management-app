@@ -1,0 +1,17 @@
+{
+    "users": [
+      {
+        "username": "user",
+        "password": "password"
+      }
+    ],
+    "projects": [
+        {
+            "title": "string",
+            "description": "string",
+            "tasks": [
+                "string"
+            ]
+        }
+    ]
+  }
