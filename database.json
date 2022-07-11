@@ -5,13 +5,33 @@
         "password": "password"
       }
     ],
-    "projects": [
+    "teams": [
         {
-            "title": "string",
-            "description": "string",
-            "tasks": [
-                "string"
-            ]
-        }
-    ]
-  }
+        "teamId": "string",
+        "name": "string",
+        "members": [
+            "string"
+        ],
+        "projects": [
+            "string"
+        ]
+    }
+    ],
+    "projects": [{
+        "id": "string",
+        "title": "string",
+        "description": "string",
+        "task": [
+            "string"
+        ]
+    }   
+    ],
+    "tasks": [{
+        "id": "string",
+        "title": "string",
+        "description": "string",
+        "dueDate": "dateTime",
+        "completed": "boolean"
+    }]
+
+}
