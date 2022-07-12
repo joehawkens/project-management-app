@@ -1,38 +1,22 @@
 {
-    "users": [{
-        "username": "user",
-        "password": "password"
-      }],
-
-
-    "teams": [{
-        "teamId": "string",
-        "name": "string",
-        "members": [
-            "string"
-        ],
-        "projects": [
-            "string"
-        ]
-    }],
-
-
-    "projects": [{
-        "id": "string",
-        "title": "string",
-        "description": "string",
-        "task": [
-            "string"
-        ]
-    }],
-
-
-    "tasks": [{
-        "id": "string",
-        "title": "string",
-        "description": "string",
-        "dueDate": "dateTime",
-        "completed": "boolean"
-    }]
-
+  "users": [
+    {
+      "username": "Joe",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "username": "Joe2",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "username": "asdfsf",
+      "password": "123",
+      "id": 3
+    }
+  ],
+  "teams": [],
+  "projects": [],
+  "tasks": []
 }
