@@ -7,7 +7,7 @@
     <meta name="description" content="Starter Snowpack App">
     <title>Project Management App</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="/index.js" type="module" defer></script>
+    <script src="/login.js" type="module" defer ></script>
     <link rel="stylesheet" href="/CSS/styles.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
@@ -21,11 +21,12 @@
         </div>
     </header>
     <main>
-        <form action="/action_page.php">
-            <label for="username">Username: </label><br>
-            <input type="text" id="username" name="username"><br>
+        <h1>LOGIN</h1>
+        <form id="login-form">
+            <label for="email">Email: </label><br>
+            <input required type="text" id="email" name="email" placeholder="email"><br>
             <label for="password">Password: </label><br>
-            <input type="text" id="password" name="password"><br><br>
+            <input required type="text" id="password" name="password" placeholder="password"><br><br>
             <input type="submit" value="LOGIN">
         </form> 
     </main>

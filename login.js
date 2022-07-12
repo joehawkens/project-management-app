@@ -1,8 +1,9 @@
-// REGISTRATION FORM DATA ( POST )
+// LOGIN FORM AUTHENTICATION - RETURNS A TOKEN IN SESSION STORAGE TO IDENTIFY USER.
 
-const registrationForm = document.querySelector('#register-form');
 
-function handleRegister(event) {
+const loginForm = document.querySelector('#login-form');
+
+function handleLogin(event) {
 
     event.preventDefault();
 
@@ -16,7 +17,7 @@ function handleRegister(event) {
 
     // POSTS JSON into local Database...
 
-    axios.post("http://localhost:3000/register", {
+    axios.post("http://localhost:3000/login", {
 
         email: parsed.email,
         password: parsed.password
@@ -25,7 +26,7 @@ function handleRegister(event) {
 
       .then((response) => {
         console.log(response.data.accessToken);
-        window.alert("You have succesfully registered.")
+        window.alert("You have succesfully logged in.")
         sessionStorage.setItem("token", response.data.accessToken) // Puts token into local storage to identify user.
       })
 
@@ -36,4 +37,4 @@ function handleRegister(event) {
 
     }
 
-registrationForm.addEventListener('submit', handleRegister);
+loginForm.addEventListener('submit', handleLogin);
