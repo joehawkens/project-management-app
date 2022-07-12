@@ -4,6 +4,7 @@
   "description": "* Includes authentication and user management\r * Performs GET/POST/PUT/DELETE against the backend API\r * All exposed features should work 100%\r * Should be a combination of static and dynamically generated Markup.\r * Should incorporate animation\r * Code should show a good level of organization (ESmodules, classes, etc)\r * Code should be error free (according to team ESLint rules)",
   "main": "index.js",
   "scripts": {
+    "start": "snowpack dev",
     "server": "json-server --watch ./database.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,7 +21,8 @@
   "homepage": "https://github.com/joehawkens/project-management-app#readme",
   "devDependencies": {
     "json-server": "^0.17.0",
-    "json-server-auth": "^2.1.0"
+    "json-server-auth": "^2.1.0",
+    "snowpack": "^3.8.8"
   },
   "dependencies": {
     "axios": "^0.27.2",
