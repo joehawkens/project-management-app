@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Starter Snowpack App">
     <title>Project Management App</title>
-    <script src="/index.js" defer></script>
+    <script src="/index.js" type="module" defer></script>
     <link rel="stylesheet" href="/CSS/styles.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
@@ -20,10 +20,10 @@
         </div>
     </header>
     <main>
-        <form action="/action_page.php">
+        <form id="register-form">
             <label for="username">Username: </label><br>
             <input type="text" id="username" name="username"><br>
-            <label for="password">Last name:</label><br>
+            <label for="password">Password: </label><br>
             <input type="text" id="password" name="password"><br><br>
             <input type="submit" value="REGISTER">
         </form> 
