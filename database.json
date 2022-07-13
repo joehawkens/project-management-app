@@ -1,5 +1,15 @@
 {
   "users": [
+    {
+      "email": "ryan@gmail.com",
+      "password": "$2a$10$Llz6HdW/WN7fFQVzGf8q3ef1BtIrOMMr/dswK7po5aF6Q6qFZsB4O",
+      "id": 1
+    },
+    {
+      "email": "joe@gmail.com",
+      "password": "$2a$10$1/ikFHn9KOcNQlPCTEcTiOhEFEJowhCQeueSUkAAOCdgSoiDD82Vi",
+      "id": 2
+    }
   ],
   "teams": [],
   "projects": [],

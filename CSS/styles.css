@@ -142,11 +142,27 @@ main form{
     top:  30px;
     right:140px;
 
-
 }
 
 
+/* ADD PROJECT ========================= */
 
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+textarea{
+    resize: none;
+}
+
+#add-project{
+    padding: 10px;
+}
 
 
 
