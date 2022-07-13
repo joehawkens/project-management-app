@@ -1,5 +1,86 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "rick@gmail.com",
+      "password": "$2a$10$ENKvnGaS49nDjlYyosylcutOMKtG2Wi.dbXBEbxkPDlb4NQ2eOXVC",
+      "id": 1
+    },
+    {
+      "email": "jon@gmail.com",
+      "password": "$2a$10$LPFeVJOrmfSaA.PSdN5JNugdRBExaC/.VpuHVdaFA6FX7LY.2V5fK",
+      "id": 2
+    },
+    {
+      "email": "ann@gmail.com",
+      "password": "$2a$10$WiOGnmWkyBYg8KaMwqabLuL9uheog4aaZ4LzsbpKqLDVnIe39YvUC",
+      "id": 3
+    },
+    {
+      "email": "bo@gmail.com",
+      "password": "$2a$10$AbvZr8cks2rOtt.HnPQzPefPOOqTtsztZMYSgxd24UTnaDYm.2Vmq",
+      "id": 4
+    },
+    {
+      "email": "bobby@gmail.com",
+      "password": "$2a$10$Jozqg3gOpKx0XAw2wPLpu.TOF4rLQW1ufnSvMv8bfL3gcN.TP5zIy",
+      "id": 5
+    },
+    {
+      "email": "buck@gmail.com",
+      "password": "$2a$10$RrsVF/CFdEl3fH0hr2nFQeYRBG5D5MKAIXFMSLT6ZsW2ET5MvH8Ay",
+      "id": 6
+    },
+    {
+      "email": "booba@gmail.com",
+      "password": "$2a$10$LfT/MocBOpMZauASS1/naexwVlU8dnp0FzzTclIsHefvtIb2dipG6",
+      "id": 7
+    },
+    {
+      "email": "rob@gmail.com",
+      "password": "$2a$10$ypPv4yniQpAGM.DLp3r1NuPAlWCxL03.UhqsycM.ziJjRJoADDTbG",
+      "id": 8
+    },
+    {
+      "email": "abe@gmail.com",
+      "password": "$2a$10$5UNgPiq55VnCXex99QZsg.6aROOqA0mVvfsbPM9LAiQhgVPTaf9y6",
+      "id": 9
+    },
+    {
+      "email": "B@gmail.com",
+      "password": "$2a$10$YnJH6tSc6XMj72zjerElsuN56GfNimVyWvDYYxzLu4.uyNwJ0UoyO",
+      "id": 10
+    },
+    {
+      "email": "d@gmail.com",
+      "password": "$2a$10$NF.hGVkbw2.yUDk/NfC0VuaxPpn1MXcEp2JTFiSBoME5YLnbfYIxK",
+      "id": 11
+    },
+    {
+      "email": "p@gmail.com",
+      "password": "$2a$10$TM.4JShxeTaiXQapS3HvX.BsxSx80ctOj4tOGXgWXhVaE2efrJ5Du",
+      "id": 12
+    },
+    {
+      "email": "asdfads@asdfasd.com",
+      "password": "$2a$10$2pLlrOJArMdEC/L5WAQ9suEoSYMoVHvLSb3VEG40zwq5ebhKPl4.i",
+      "id": 13
+    },
+    {
+      "email": "sdg@gmail.com",
+      "password": "$2a$10$cmsWhtG9qGEAbvqJPtvpQuC5TVq33BLx/RegyS5Qg92m4rKfqXPmC",
+      "id": 14
+    },
+    {
+      "email": "sadfas@gmail.com",
+      "password": "$2a$10$YBUaTjnnSD3wHodGBpacB.KNIAlvTccMv/s5N6cURgQkUIodcrZDW",
+      "id": 15
+    },
+    {
+      "email": "allen@gmail.com",
+      "password": "$2a$10$ZmER9pvCSbVPFJhlEpz/JutanjzBNSHQkEmBAc/qU0H3TXZj4cYHC",
+      "id": 16
+    }
+  ],
   "teams": [],
   "projects": [],
   "tasks": []

@@ -28,6 +28,7 @@ function handleLogin(event) {
         console.log(response.data.accessToken);
         window.alert("You have succesfully logged in.")
         sessionStorage.setItem("token", response.data.accessToken) // Puts token into local storage to identify user.
+        window.location.href = "./projects.html";
       })
 
       .catch(function (error) {

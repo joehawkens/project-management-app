@@ -1,3 +1,4 @@
+
 // REGISTRATION FORM DATA ( POST )
 
 const registrationForm = document.querySelector('#register-form');
@@ -33,7 +34,7 @@ function handleRegister(event) {
         console.log(error.toJSON());
         window.alert("invalid login, try again.")
       });
-
+      
     }
 
 registrationForm.addEventListener('submit', handleRegister);
