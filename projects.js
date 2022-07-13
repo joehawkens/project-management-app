@@ -1,3 +1,6 @@
+
+// When the user clicks the logout button they're redirected to the homepage and their token is cleared...
+
 function logout() {
 
 
@@ -8,3 +11,6 @@ function logout() {
 
 
 document.querySelector("#logout").addEventListener("click", logout)
+
+
+//

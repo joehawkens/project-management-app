@@ -132,7 +132,18 @@ main form{
 
 
 
+/* PROJECTS PAGE =============================================================== */
 
+#logout{
+
+    grid-area: "login";
+    float: right;
+    position: relative;
+    top:  30px;
+    right:140px;
+
+
+}
 
 
 
