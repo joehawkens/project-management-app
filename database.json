@@ -9,6 +9,51 @@
       "email": "joe@gmail.com",
       "password": "$2a$10$1/ikFHn9KOcNQlPCTEcTiOhEFEJowhCQeueSUkAAOCdgSoiDD82Vi",
       "id": 2
+    },
+    {
+      "email": "thing@gmail.com",
+      "password": "$2a$10$kyhhCRQ/kqlY/oAjaequ4u2G5GTt4kGuGxxE.3SGKmA4FwflwiBSq",
+      "id": 3
+    },
+    {
+      "email": "thing2@gmail.com",
+      "password": "$2a$10$XNvYKYKcDQLqVDU910aB5eZtNX4RSZwVFbczQGNn.73x/a5l01ruy",
+      "id": 4
+    },
+    {
+      "email": "thing3@gmail.com",
+      "password": "$2a$10$JXb9M5EwZ6SnQThsdXxMY.lryz8z30G8EMTLhm8uucvYuL7cH/XHS",
+      "id": 5
+    },
+    {
+      "email": "thing4@gmail.com",
+      "password": "$2a$10$Nv7MIilM7rTkhNF0ZMktE.1FTnRuXjESwr2rJnswcrMnnhz4cK.iC",
+      "id": 6
+    },
+    {
+      "email": "thing5@gmail.com",
+      "password": "$2a$10$QsKfiYRuRh7qjyjnR35bBu0vgYgQ.A3geK7ybo/NWYGQHtBvaq7PW",
+      "id": 7
+    },
+    {
+      "email": "thing6@gmail.com",
+      "password": "$2a$10$STiVTlwlik19hdWfZE7maeIEJoEvEEWIyox7Ju9Kvz787IFCeE95i",
+      "id": 8
+    },
+    {
+      "email": "thing7@gmail.com",
+      "password": "$2a$10$Mrxrc.qfbo4yks12qbd99OD9vKE6OdpE8wtGZMFJK7zRqfJ6mvGI.",
+      "id": 9
+    },
+    {
+      "email": "thing8@gmail.com",
+      "password": "$2a$10$X1dR7cwHHDQMuTIiIiOJBOvHHQ1Nfjn9Ux3y6s4dtlRZvKdB0k7Hy",
+      "id": 10
+    },
+    {
+      "email": "thing10@gmail.com",
+      "password": "$2a$10$t30yc4W/0lVHuGBjHkbuSu0zOFzwEnv4aicFI0lRRlPTnfDZkCcTC",
+      "id": 11
     }
   ],
   "teams": [],

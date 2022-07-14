@@ -28,7 +28,7 @@ a {
 
 header{
     display: grid;
-    grid-template-areas: "title login";
+    grid-template-areas: "title gif login";
     width: 100%;
     margin-bottom: 10px;
     height: auto;
@@ -36,10 +36,16 @@ header{
     background-color: orange;
 }
 
+#gif{
+    grid-area: "gif";
+
+}
+
 #title{
     grid-area: "title";
     font-family: 'Dosis';
     text-align: left;
+    margin: auto;
     margin-left: 15px;
 }
 
