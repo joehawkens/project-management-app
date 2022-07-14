@@ -9,6 +9,11 @@
       "email": "bob@gmail.com",
       "password": "$2a$10$snbrEUfGBbaUM5PRGgue.OuzgUjxiyo2/Q7HOqhbSxUGsxUAmLWTy",
       "id": 2
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$vFTXI1Aswo1Ug08bXLEnEuW4bEFrK.36eE3gFgs6XDt8oCcsATfqK",
+      "id": 3
     }
   ],
   "projects": [
