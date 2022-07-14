@@ -4,14 +4,37 @@
       "email": "joe@gmail.com",
       "password": "$2a$10$yAy7HEjCCGqpp1Cujxqb7OXHcTomWG5viZehhNMzuVo86wft0Nl0K",
       "id": 1
+    },
+    {
+      "email": "bob@gmail.com",
+      "password": "$2a$10$snbrEUfGBbaUM5PRGgue.OuzgUjxiyo2/Q7HOqhbSxUGsxUAmLWTy",
+      "id": 2
     }
   ],
   "projects": [
     {
-      "title": "Fancy",
-      "description": "Fancy Description",
+      "title": "Joe's Project 1",
+      "description": "1",
       "userID": "1",
       "id": 1
+    },
+    {
+      "title": "Joe's Project 2",
+      "description": "2",
+      "userID": "1",
+      "id": 2
+    },
+    {
+      "title": "Joe's Project 3",
+      "description": "3",
+      "userID": "1",
+      "id": 3
+    },
+    {
+      "title": "Bob's Project",
+      "description": "It's bobs.",
+      "userID": "2",
+      "id": 4
     }
   ],
   "tasks": []

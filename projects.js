@@ -13,7 +13,7 @@ document.querySelector("#logout").addEventListener("click", logout)
 
 
 
-// Create Project Form ====================================================================================================
+// Create Project Form ======================================================================================================================================
 
 const addProjectButton = document.querySelector("#add-project");
 
@@ -23,9 +23,9 @@ function generateProjectForm(){
     `
     <form id="add-project">
         <label for="project-title">Project Title</label>
-        <input id="project-title" type="text" name="project-title">
+        <input required id="project-title" type="text" name="project-title">
         <label for="project-desc">Project Description</label>
-        <textarea id="project-desc"  name="project-desc" resize="none" cols="30" rows="10"></textarea>
+        <textarea required id="project-desc"  name="project-desc" resize="none" cols="30" rows="10"></textarea>
         <input type="submit" value="Create Project">
     </form>
     `
@@ -38,7 +38,7 @@ document.querySelector("#add-project-button").addEventListener("click", generate
 
 
 
-// (POSTS Project Form to Database) =====================================================================================
+// (POSTS Project Form to Database) ======================================================================================================================
 
 const createProjectForm = document.querySelector('#add-project');
 
@@ -85,10 +85,9 @@ createProjectForm.addEventListener('submit', createProject);
 
 
 
-// (GET Project from Database) =====================================================================================
+// (GET Project from Database) =======================================================================================================================
 
 // When button clicked, fetch data...
-//
 
 
 const myProjectsButton = document.querySelector('#my-projects-button');
@@ -99,7 +98,21 @@ function getProjects(){
 
     axios.get('http://localhost:3000/projects')
     .then(function (response) {
-        console.log(response.data);
+        console.log(response.data[0]['userID']); // returns 1.
+        // 1. iterate through all projects, and pull the ones from the user...
+        // Loops through all of the projects in the database and console.logs all the ones belonging to the logged in user...
+        let index = 0;
+        while(index < response.data.length){
+
+            if(response.data[index]["userID"] === sessionStorage.getItem('currentUser'))
+
+                console.log(response.data[index])
+                index += 1;
+
+        }
+
+        // 2. Generate HTMl with info about each project, add an edit tool for PUT/DELETE requests...
+
     })
       .catch(function (error) {
         console.log(error.toJSON());

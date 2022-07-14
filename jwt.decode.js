@@ -1,3 +1,7 @@
+// This code is a third party library I borrowed. It decodes JWT Tokens, the token code I implemented is found at the very bottom...
+
+
+
 (function (factory) {
     typeof define === 'function' && define.amd ? define(factory) :
     factory();
