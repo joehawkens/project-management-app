@@ -1,6 +1,5 @@
 // LOGIN FORM AUTHENTICATION - RETURNS A TOKEN IN SESSION STORAGE TO IDENTIFY USER.
 
-
 const loginForm = document.querySelector('#login-form');
 
 function handleLogin(event) {
@@ -25,10 +24,12 @@ function handleLogin(event) {
       })
 
       .then((response) => {
+
         console.log(response.data.accessToken);
-        window.alert("You have succesfully logged in.")
-        sessionStorage.setItem("token", response.data.accessToken) // Puts token into local storage to identify user.
+        window.alert("You have succesfully logged in.");
+        sessionStorage.setItem("token", response.data.accessToken); // Puts token into local storage to identify user.
         window.location.href = "./projects.html";
+
       })
 
       .catch(function (error) {

@@ -5,7 +5,7 @@ const registrationForm = document.querySelector('#register-form');
 
 function handleRegister(event) {
 
-    event.preventDefault();
+    event.preventDefault(event);
 
     // turns data into JSON...
 
