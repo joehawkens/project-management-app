@@ -110,6 +110,8 @@ function getProjects(){
         let counter = 0;
         let userProjectsArray = []
 
+
+
         while(index < response.data.length){
 
           if(response.data[index]["userID"] === sessionStorage.getItem('currentUser'))
@@ -123,6 +125,10 @@ function getProjects(){
         console.log(userProjectsArray)
         console.log(userProjectsArray.length)
 
+        if (userProjectsArray == 0) {
+          alert("You don't have any projects.")
+        }
+
         //1. Get all projects.
         //2. Count how many there are.
         //3. Post the HTML x amount of times
@@ -134,15 +140,16 @@ function getProjects(){
 
           const projTitle = userProjectsArray[index2]["title"];
           const projDesc = userProjectsArray[index2]["description"];
+          const projId = userProjectsArray[index2]["id"];
 
           document.querySelector("#my-projects").innerHTML +=
           `
-          <div id="project-${index2 + 1}"class="project-box">
+          <div id="project-${index2 + 1}"class="project-box" data-id=${projId}>
             <span id="edit-icon" class="material-symbols-outlined">
                 edit
             </span>
-            <span id="delete-icon" class="material-symbols-outlined">
-                delete_forever
+            <span id="delete-icon" class="material-symbols-outlined" data-id=${projId}>
+                delete_forever 
             </span>
             <h1>${projTitle}</h1>
             <p>${projDesc}</p>
@@ -158,6 +165,9 @@ function getProjects(){
         window.alert("You don't have any projects.")
       });
 
+      eraseButton = document.querySelector('#delete-icon');
+      eraseButton.addEventListener('click', deleteProject);
+
 }
 
 myProjectsButton.addEventListener('click', getProjects);
@@ -165,3 +175,90 @@ myProjectsButton.addEventListener('click', getProjects);
 
 
 // EDIT PROJECTS (PUT) ========================================================================================================================
+
+
+
+
+
+// (DELETE Project) ==========================================================================================================================
+
+// 1. Identify which project you're deleting
+
+
+
+const projectDiv = document.querySelector('#my-projects');
+
+
+
+function deleteProject(element) {
+
+    // event.preventDefault(event);
+
+    const projectId = parseInt(element)
+
+    console.log(projectId)
+
+    axios.delete(`http://localhost:3000/projects/${projectId}`)
+
+      .then((response) => {
+        
+        window.alert("Project has been deleted.")
+
+      })
+
+      .catch(function (error) {
+        console.log(error.toJSON());
+        window.alert("Something went wrong, try again later.")
+      });
+
+}
+
+function editProject(element) {
+
+  // event.preventDefault(event);
+
+  const projectId = parseInt(element)
+
+  console.log(projectId)
+
+  axios.put(`http://localhost:3000/projects/${projectId}`)({
+
+
+
+
+
+  }).then((response) => {
+      
+      window.alert("Project has been deleted.")
+
+    })
+
+    .catch(function (error) {
+      console.log(error.toJSON());
+      window.alert("Something went wrong, try again later.")
+    });
+
+}
+
+projectDiv.addEventListener("click", (e)=>{
+
+  if (e.target && e.target.nodeName === 'SPAN' && e.target.id === "delete-icon"){
+
+    deleteProject(e.target.attributes["data-id"]["value"])
+    console.log('DELETE')
+
+
+
+
+  }
+
+  else if (e.target && e.target.nodeName === 'SPAN' && e.target.id === "edit-icon") {
+
+    editProject(e.target.attributes["data-id"]["value"])
+    console.log("EDIT")
+
+    
+
+  }
+
+})

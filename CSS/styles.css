@@ -162,6 +162,7 @@ main form{
 
 /* EDIT ICON  =================*/
 
+
 #edit-icon:hover{
     cursor: pointer;
 }
@@ -180,6 +181,8 @@ main form{
     right: 40px;
     top: 11px;
 }
+
+
 
 /* PROJECT BOXES ============== */
 

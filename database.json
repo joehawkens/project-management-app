@@ -14,6 +14,11 @@
       "email": "test@gmail.com",
       "password": "$2a$10$vFTXI1Aswo1Ug08bXLEnEuW4bEFrK.36eE3gFgs6XDt8oCcsATfqK",
       "id": 3
+    },
+    {
+      "email": "richard@gmail.com",
+      "password": "$2a$10$SxrB5YwLVZHBeIXHgWSsnOm9Yr0t9WGWwowEhK/pGmHbERgeykc76",
+      "id": 4
     }
   ],
   "projects": [
@@ -40,18 +45,6 @@
       "description": "It's bobs.",
       "userID": "2",
       "id": 4
-    },
-    {
-      "title": "Joe's Project 4",
-      "description": "4",
-      "userID": "1",
-      "id": 5
-    },
-    {
-      "title": "Joe's Project 5",
-      "description": "5",
-      "userID": "1",
-      "id": 6
     }
   ],
   "tasks": []

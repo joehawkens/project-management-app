@@ -1,5 +1,0 @@
-Since we lowered the scope we're getting rid of teams.
-And at this point I probably won't implement tasks either,
-so that leaves Projects - allow the user to edit and delete Projects
-after they're fetched from the database + dynamically generated on the page
-and that fulfills all the requirements for this final.
