@@ -19,25 +19,15 @@
       "email": "richard@gmail.com",
       "password": "$2a$10$SxrB5YwLVZHBeIXHgWSsnOm9Yr0t9WGWwowEhK/pGmHbERgeykc76",
       "id": 4
+    },
+    {
+      "email": "ashley@gmail.com",
+      "password": "$2a$10$TMu6hPlJ0RSif1AZZk8eheetZmdTmptsZnkAXUvDvU8og9IQqWy2a",
+      "id": 5
     }
   ],
   "projects": [
     {
-      "title": "Joe's Project 1",
-      "description": "1",
-      "userID": "1",
-      "id": 1
-    },
-    {
-      "title": "Joe's Project 2",
-      "description": "2",
-      "userID": "1",
-      "id": 2
-    },
-    {
-      "title": "Joe's Project 3",
-      "description": "3",
-      "userID": "1",
       "id": 3
     },
     {
@@ -45,6 +35,21 @@
       "description": "It's bobs.",
       "userID": "2",
       "id": 4
+    },
+    {
+      "title": "Ashley's Project 2",
+      "description": "2",
+      "userID": "5",
+      "id": 6
+    },
+    {
+      "title": "Ashley's Project 3",
+      "description": "3",
+      "userID": "5",
+      "id": 7
+    },
+    {
+      "id": 8
     }
   ],
   "tasks": []

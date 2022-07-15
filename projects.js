@@ -175,12 +175,7 @@ myProjectsButton.addEventListener('click', getProjects);
 
 
 // EDIT PROJECTS (PUT) ========================================================================================================================
-
-
-
-
-
-// (DELETE Project) ==========================================================================================================================
+// DELETE PROJECTS (DELETE) ==========================================================================================================================
 
 // 1. Identify which project you're deleting
 
@@ -214,6 +209,11 @@ function deleteProject(element) {
 }
 
 function editProject(element) {
+
+  // 1. Remove the title and description and turn them into an input and text area form field with those values.
+  // 2. Allow the user to submit their changes and click submit.
+
+
 
   // event.preventDefault(event);
 
