@@ -152,6 +152,39 @@ main form{
 
 }
 
+#projects-page-body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(255, 228, 218);
+    border: solid black;
+    margin: auto;
+}
+
+/* EDIT ICON  =================*/
+
+#edit-icon:hover{
+    cursor: pointer;
+}
+
+.material-symbols-outlined:hover{
+    cursor: pointer;
+}
+
+.material-symbols-outlined{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/* PROJECT BOXES ============== */
+
+
+.project-box{
+    position: relative;
+    margin: 10px;
+}
+
+
 #projects-page-body button{
 
     display: block;
@@ -179,6 +212,26 @@ textarea{
 #add-project{
     padding: 10px;
 }
+
+
+
+/* USERS PROJECTS ========================= */
+
+#my-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+
+.project-box{
+    border: solid black;
+    background-color: white;
+    padding: 20px;
+}
+
+
 
 
 

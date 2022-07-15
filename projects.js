@@ -94,6 +94,10 @@ const myProjectsButton = document.querySelector('#my-projects-button');
 
 function getProjects(){
 
+  let projTitle = "";
+  let projDesc = "";
+
+
     // POSTS JSON into JSON server...
 
     axios.get('http://localhost:3000/projects')
@@ -102,29 +106,59 @@ function getProjects(){
         // 1. iterate through all projects, and pull the ones from the user...
         // Loops through all of the projects in the database and console.logs all the ones belonging to the logged in user...
         let index = 0;
+        let index2 = 0;
+        let counter = 0;
+        let userProjectsArray = []
+
         while(index < response.data.length){
 
-            if(response.data[index]["userID"] === sessionStorage.getItem('currentUser'))
+          if(response.data[index]["userID"] === sessionStorage.getItem('currentUser'))
 
-                console.log(response.data[index])
-                index += 1;
+            userProjectsArray.push(response.data[index])
+            index += 1;
+            counter += 1;
 
         }
 
+        console.log(userProjectsArray)
+        console.log(userProjectsArray.length)
+
+        //1. Get all projects.
+        //2. Count how many there are.
+        //3. Post the HTML x amount of times
+        // GET Title = console.log(response.data[index]["title"])
+        // GET Description = console.log(response.data[index]["description"])
+
         // 2. Generate HTMl with info about each project, add an edit tool for PUT/DELETE requests...
+        while(index2 < userProjectsArray.length){
+
+          const projTitle = userProjectsArray[index2]["title"];
+          const projDesc = userProjectsArray[index2]["description"];
+
+          document.querySelector("#my-projects").innerHTML +=
+          `
+          <div class="project-box">
+            <span id="edit-icon" class="material-symbols-outlined">
+                edit
+            </span>
+            <h1>${projTitle}</h1>
+            <p>${projDesc}</p>
+          </div>
+          `
+          index2 += 1;
+        
+        }
 
     })
       .catch(function (error) {
         console.log(error.toJSON());
         window.alert("You don't have any projects.")
       });
-      
-
-
-
-
-
 
 }
 
 myProjectsButton.addEventListener('click', getProjects);
+
+
+
+// EDIT PROJECTS (PUT) ========================================================================================================================
