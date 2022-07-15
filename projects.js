@@ -137,9 +137,12 @@ function getProjects(){
 
           document.querySelector("#my-projects").innerHTML +=
           `
-          <div class="project-box">
+          <div id="project-${index2 + 1}"class="project-box">
             <span id="edit-icon" class="material-symbols-outlined">
                 edit
+            </span>
+            <span id="delete-icon" class="material-symbols-outlined">
+                delete_forever
             </span>
             <h1>${projTitle}</h1>
             <p>${projDesc}</p>
