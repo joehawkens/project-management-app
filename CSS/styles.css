@@ -112,6 +112,13 @@ main button{
 
 }
 
+#alert{
+    color: red;
+}
+#alert-good{
+    color: greenyellow;
+}
+
 @keyframes slidein {
     from {
       opacity: 0.1;

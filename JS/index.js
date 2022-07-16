@@ -27,13 +27,12 @@ function handleRegister(event) {
       .then((response) => {
         window.location.href="login.html";
         console.log(response.data.accessToken);
-        window.alert("You have succesfully registered.")
         sessionStorage.setItem("token", response.data.accessToken) // Puts token into local storage to identify user.
       })
 
       .catch(function (error) {
         console.log(error.toJSON());
-        window.alert("invalid login, try again.")
+        document.querySelector("#alert").innerHTML = "invalid registration, try again."
       });
       
     }

@@ -26,7 +26,6 @@ function handleLogin(event) {
       .then((response) => {
 
         console.log(response.data.accessToken);
-        window.alert("You have succesfully logged in.");
         sessionStorage.setItem("token", response.data.accessToken); // Puts token into local storage to identify user.
         window.location.href = "./projects.html";
 
@@ -34,7 +33,7 @@ function handleLogin(event) {
 
       .catch(function (error) {
         console.log(error.toJSON());
-        window.alert("invalid login, try again.")
+        document.querySelector("#alert").innerHTML = "invalid login, try again."
       });
 
     }

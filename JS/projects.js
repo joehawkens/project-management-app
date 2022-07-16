@@ -69,13 +69,13 @@ function createProject(event) {
 
       .then((response) => {
         console.log(response.data);
-        window.alert("Your Project has been posted!")
+        document.querySelector("#alert-good").innerHTML = "Your project has been posted!"
 
       })
 
       .catch(function (error) {
         console.log(error.toJSON());
-        window.alert("invalid credentials, try again.")
+        document.querySelector("#alert").innerHTML = "invalid credantials, try again"
       });
       
 
@@ -126,7 +126,7 @@ function getProjects(){
         console.log(userProjectsArray.length)
 
         if (userProjectsArray == 0) {
-          alert("You don't have any projects.")
+          document.querySelector("#alert").innerHTML = "You don't have any projects"
         }
 
         //1. Get all projects.
@@ -162,7 +162,7 @@ function getProjects(){
     })
       .catch(function (error) {
         console.log(error.toJSON());
-        window.alert("You don't have any projects.")
+        document.querySelector("#alert").innerHTML = "You don't have any projects."
       });
 
       eraseButton = document.querySelector('#delete-icon');
@@ -196,14 +196,14 @@ function deleteProject(element) {
     axios.delete(`http://localhost:3000/projects/${projectId}`)
 
       .then((response) => {
+        document.querySelector("#alert-good").innerHTML = "Project has been deleted"
         
-        window.alert("Project has been deleted.")
 
       })
 
       .catch(function (error) {
         console.log(error.toJSON());
-        window.alert("Something went wrong, try again later.")
+        document.querySelector("#alert").innerHTML = "Something went wrong, try again later."
       });
 
 }
@@ -228,14 +228,14 @@ function editProject(element) {
 
 
   }).then((response) => {
+      document.querySelector("#alert-good").innerHTML = "Project has been deleted"
       
-      window.alert("Project has been deleted.")
 
     })
 
     .catch(function (error) {
       console.log(error.toJSON());
-      window.alert("Something went wrong, try again later.")
+      document.querySelector("#alert").innerHTML = "Something went wrong, try again later."
     });
 
 }
