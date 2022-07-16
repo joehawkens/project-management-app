@@ -24,6 +24,11 @@
       "email": "ashley@gmail.com",
       "password": "$2a$10$TMu6hPlJ0RSif1AZZk8eheetZmdTmptsZnkAXUvDvU8og9IQqWy2a",
       "id": 5
+    },
+    {
+      "email": "tester1@gmail.com",
+      "password": "$2a$10$2k8T.wICwWd20WXV9elDK.D4HIci.zSlcYNsDLkkUxkZJicgHjig.",
+      "id": 6
     }
   ],
   "projects": [
@@ -50,6 +55,12 @@
     },
     {
       "id": 8
+    },
+    {
+      "title": "test",
+      "description": "test",
+      "userID": null,
+      "id": 9
     }
   ],
   "tasks": []
